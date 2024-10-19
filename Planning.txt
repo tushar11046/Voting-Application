@@ -1,0 +1,36 @@
+functionality to cast vote to candidates
+
+Models>
+Routes
+
+Functionality
+
+1. user sign in / sign up
+2. see the list of candidates (while voting)
+3. voting single time only single candidate
+4. route showing list of candidates with live vote count (sorted by vote count)
+5. unique govt id proof for each user
+6- Admin to maintain condidates list 
+7- user can change their password
+
+Routes-
+
+1- Authentication-
+   a- sign up  -> /signup
+   b- sign in  -> /signin
+
+2- voting
+   a- see the list of candidates   -> /candidates
+   b- vote any specific candidate  -> /vote/:candidateID
+
+3- vote counts  -> /vote/counts
+
+4- user profile updation
+   a- get user's information  ->/profile
+   b- change password         ->/profile/password  
+
+5- Admin's candidate management
+   a- create a new candidate          -> /candidate (post)
+   b- update an existing candidate    -> /candidate/:candidateID (put)
+   c- delete an existing candidate    -> /candidate/:candidateID (delete)
+   d- can't vote
